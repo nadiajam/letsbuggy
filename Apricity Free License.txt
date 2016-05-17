@@ -1,0 +1,24 @@
+Thank you for downloading Komorebi! Before you can use this typeface in your designs, you must read and agree to this End User License Agreement.
+
+== Terminology ==
+"you": This license addresses the user(s) of the font, who could be an individual or a group (see below).
+font: This license will use the word "font" to include all the weights of the font family, or in other words, all the thicknesses from Hairline to Heavy.
+group: A group is a company or a graphical team who are recognized lawfully and/or are working together on a free or commercial project. A group should not contain more than 10 users who plan to actively use the font. If the users switch from workstation to workstation, the font may be installed in 1.5n computers (round off), where n is the number of users.
+
+== Personal or Commercial Use ==
+The use of the font is allowed only for the individual—for personal use—or group—for internal business use—who purchased Komorebi. A member of the group may not "take home" font data for any use outside the group's projects.
+You are disallowed to use Komorebi for any illicit, violent, or pornographic purposes. These include, for example, usage for sites facilitating piracy; logotype for weapons and artillery, whether physical or reproduced digitally; and for title cards of pornographic videos.
+You are disallowed to reupload individual weights or the full font package in public; you are, however, allowed to upload the font into a cloud storage service as unlisted, given that only members of the group may access and download the font.
+
+== Desktop and Print ==
+You may install this font onto up to 10 computers. However, if you no longer use one of the computers, you may subtract that computer from the total, as long as either the font is uninstalled from it or the computer is not functional.
+
+== Embedding ==
+You may embed static graphic images of the font into any electronic document, as long as they are not used as a replacement for the font (e.g. a set of images that showcase each letter of the alphabet to which a program refers back to display a string of text). However, even if they are, as long as the text is processed enough (e.g. drop shadow, glow, gradient or pattern fill, gradient or pattern stroke) so that backwards-engineering is rendered difficult or impossible, such images are allowed to be embedded.
+You may embed copies of the font into a digital program, as long as it is distributed in a secure format where extraction of the font is difficult or impossible, and the digital program does not generate documents that also have a copy of the font embedded.
+
+== Web fonts ==
+You may embed copies of the font into a Web page, as long as said Web page is not involved in illicit or pornographic activity, and said Web page does not use Comic Sans or Papyrus in tandem with this font.
+
+== Consequences ==
+In the case where you break this license, I will personally not be able to give you repurcussions, but please, please keep this license. It's the least you could do. :(
