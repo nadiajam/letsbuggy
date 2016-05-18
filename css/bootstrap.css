@@ -5955,6 +5955,9 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
+.center {
+    margin:auto;
+}
 .center-block {
   display: block;
   margin-right: auto;
