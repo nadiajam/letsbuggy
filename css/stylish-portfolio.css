@@ -6,6 +6,8 @@
 
 /* Global Styles */
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,900,700);
+
 html,
 body {
     width: 100%;
@@ -13,7 +15,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-vertical-center {
@@ -162,6 +164,22 @@ hr.small {
     -o-background-size: cover;
 }
 
+.header h2 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.header h3 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.header h1 {
+    font-weight: 500;
+    font-size: 80px;
+}
+
+
 /* About */
 
 .about {
@@ -235,5 +253,5 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 100px 0 30px 0;
 }
