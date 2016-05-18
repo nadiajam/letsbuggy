@@ -44,6 +44,36 @@ audio:not([controls]) {
 template {
   display: none;
 }
+
+.left-aligned {
+    float:left;
+}
+
+.right-aligned {
+    float:right;    
+}
+
+.aligned {
+    display:inline;
+}
+
+.left {
+    text-align:left;
+    padding-left:3px;
+}
+
+.right {
+    text-align: right;
+    padding-right: 3px;
+}
+.center {
+    
+}
+
+.left-padding {
+    margin-left: 1rem;
+}
+
 a {
   background: transparent;
 }
@@ -1926,12 +1956,24 @@ pre code {
   .col-lg-6 {
     width: 50%;
   }
+  .col-lg-55 {
+    width: 45.83555555%;
+  }
+    
   .col-lg-5 {
     width: 41.66666667%;
   }
+    
+
+  .col-lg-45 {
+    width: 34.4988888888%;
+  }
+    
   .col-lg-4 {
     width: 33.33333333%;
   }
+
+    
   .col-lg-3 {
     width: 25%;
   }
@@ -2046,6 +2088,11 @@ pre code {
   .col-lg-offset-4 {
     margin-left: 33.33333333%;
   }
+    
+  .col-lg-offset-35 {
+    margin-left: 29.165555%;
+  }
+    
   .col-lg-offset-3 {
     margin-left: 25%;
   }
