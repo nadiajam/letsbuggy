@@ -276,3 +276,24 @@ hr.small2 {
 footer {
     padding: 100px 0 30px 0;
 }
+
+
+#content1 {
+    display: none;
+}
+
+#content2 {
+    display: none;
+}
+
+#content3 {
+    display: none;
+}
+
+#content4 {
+    display: none;
+}
+
+#content5 {
+    display: none;
+}

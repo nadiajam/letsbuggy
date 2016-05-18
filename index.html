@@ -188,8 +188,30 @@
                                 <h4>
                                     <strong>What Time Departure from NU?</strong>
                                 </h4>
-                                <a href="#date" class="btn btn-light">apple</a>
-                                <a href="#date" class="btn btn-light">banana</a>
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>4</button>
+                                <button>5</button>
+                                <div id="content">
+                                
+                                </div>
+                                <div id="content1">
+                                    <img src="img/portfolio-1.jpg">
+                                </div>
+                                <div id="content2">
+                                    <img src="img/portfolio-2.jpg">
+                                </div>
+                                <div id="content3">
+                                    <img src="img/portfolio-3.jpg">
+                                </div>
+                                <div id="content4">
+                                    <img src="img/portfolio-4.jpg">
+                                </div>
+                                <div id="content5">
+                                    <img src="img/portfolio-4.jpg">
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -209,19 +231,19 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/armaan.shah.77" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://www.facebook.com/buggyhq" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/lets.buggy/?hl=en" target="_blank"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/buggyhq?lang=en" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
                     
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">letsbuggy@gmail.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:buggyhq@gmail.com">buggyhq@gmail.com</a>
                         </li>
                     </ul>
                     <p class="text-muted">Copyright &copy; Your Website 2014</p>
@@ -266,6 +288,13 @@
             }
         });
     });
+        
+    
+        
+        
+    $('button').bind('click', function() {
+    $('div#content').html($('div#content' + ($(this).index()-1)).html());
+});
     </script>
 
 </body>
