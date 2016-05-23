@@ -52,7 +52,6 @@ body {
 }
 
 .btn-light {
-    border-radius: 0;
     color: #333;
     background-color: rgb(255,255,255);
 }
@@ -168,7 +167,7 @@ hr.small2 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../IMG_3743.JPG) no-repeat center center scroll;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -216,8 +215,7 @@ hr.small2 {
     margin: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 120px;
     font-size: 16px;
     
 }
@@ -326,8 +324,13 @@ footer {
 
 #scrollbar {
     vertical-align: middle;
-    background: rgba(224,224,224,0.1);
+    background: rgba(224,224,224,0.3);
     border-radius: 5px;
+    margin: auto;
+    height: 450px; 
+    width: 800px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #content {
@@ -336,24 +339,26 @@ footer {
 
 .option {
     font-family: 'Roboto', sans-serif;
-    height: 35px;
-    padding-bottom: 0px;
     color: white;
-    letter-spacing: 1px;
-    padding-left: 25%;
-    padding-right: 25%;
+/*    vertical-align: middle;*/
+    height: 70px;
 }
 
 h2 {
-    color: black;
-    font-size: 19px;
+    color: white;
+    font-size: 10px;
     font-weight: lighter;
-    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+    width: 250px;
+    vertical-align: middle;
 }
 
 hr.small3 {
     border: 0;
-    color: black;
+    color: white;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, rgba(f,f,f,f), rgba(f, f, f, 0.75), rgba(f, f, f, f));
 }
