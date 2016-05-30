@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,16 +23,8 @@
     
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,900,700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
-    
-    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-    <link rel="icon" type="image/png" href="/favicon.png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/1464472826.ico">
 
 </head>
 
@@ -41,79 +33,56 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-color text-vertical-center">
-            <h1>Buggy</h1>
-            <h3>We're here to help you split rides and save money. </h3>
+            <img id="logo" src="logo.png">
+            <h3>we're here to help you split rides and save money</h3>
             
-            <div class="container">
-            <div  class="row text-center">
-                <div class="col-lg-9 col-lg-offset-3">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-               <!--                 <i class="fa fa-circle fa-stack-2x"></i>   -->
-                                <i class="fa fa-plane fa-stack-1x text-primary"></i>
-                            </span>
-        <!--                        <h4>
-                                    <strong>Airport</strong>
-                                </h4>      -->
-                                <h5>Select Airport</h5>
-         <!--                       <a href="#" class="btn btn-light">Learn More</a>  -->
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                <!--                 <i class="fa fa-circle fa-stack-2x"></i>   -->
-                                <i class="fa fa-calendar fa-stack-1x text-primary"></i>
-                            </span>
-                                <!--                        <h4>
-                                    <strong>Airport</strong>
-                                </h4>      -->
-                                <h5>Select Departure Date</h5>
-         <!--                       <a href="#" class="btn btn-light">Learn More</a>  -->
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-              <!--                 <i class="fa fa-circle fa-stack-2x"></i>   -->
-                                <i class="fa fa-clock-o fa-stack-1x text-primary"></i>
-                            </span>
-                                <!--                        <h4>
-                                    <strong>Airport</strong>
-                                </h4>      -->
-                                <h5>Select Campus Departure Time</h5>
-         <!--                       <a href="#" class="btn btn-light">Learn More</a>  -->
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-           <!--                 <i class="fa fa-circle fa-stack-2x"></i>   -->
-                                <i class="fa fa-users fa-stack-1x text-primary"></i>
-                            </span>
-                                <!--                        <h4>
-                                    <strong>Airport</strong>
-                                </h4>      -->
-                                <h5>Connect</h5>
-         <!--                       <a href="#" class="btn btn-light">Learn More</a>  -->
-                            </div>
-                        </div>
+            <div class="container col-md-offset-2">    
+                <div class="col-md-2 col-sm-6">
+                    <div class="service-item">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-plane fa-stack-1x text-primary" style="color: #71aebc;"></i>
+                            <br>
+                            <h5>Select Airport</h5>
+                        </span>
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
+
+                <div class="col-md-2 col-sm-6">
+                    <div class="service-item">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-calendar fa-stack-1x text-primary" style="color: #71aebc;"></i>
+                            <br>
+                            <h5>Select Departure Date</h5>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6">
+                    <div class="service-item">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-clock-o fa-stack-1x text-primary" style="color: #71aebc;"></i>
+                            <br>
+                            <h5>Select Campus Departure Time</h5>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6">
+                    <div class="service-item">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-users fa-stack-1x text-primary" style="color: #71aebc;"></i>
+                            <br>
+                            <h5>Connect</h5>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <!-- /.row -->
-        </div>
-            <br>
-            <a href="#airport" class="btn btn-dark btn-lg">Let's Buggy</a>
+            <a href="#airport" class="btn btn-dark btn-lg smoothScroll">Let's Buggy</a>
         </div>
     </header>
     
 
-    
+   <!-- Services -->  
     <section id="airport" class="services bg-primary">
         <div class="container pad-top">
             <div class="row text-center">
@@ -123,24 +92,22 @@
                             <div class="service-item">
                                 <div class="fa-stack fa-5x">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-plane fa-stack-1x text-primary"></i>
+                                    <i class="fa fa-plane fa-stack-1x text-primary" style="color: #71aebc;"></i>
                                 </div>
+                                
                                 <div>
                                     <h4><strong>Which Airport?</strong></h4>
-                                    <a href="#date" class="btn btn-light">O'Hare</a>
-                                    <a href="#date" class="btn btn-light">Midway</a>
+                                    <a href="#date" class="btn btn-light smoothScroll">O'Hare</a>
+                                    <a href="#date" class="btn btn-light smoothScroll">Midway</a>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
-    <hr class="small2">
+        <hr class="small2">
     </section>
     
     <section id="date" class="services bg-primary">
@@ -152,34 +119,30 @@
                             <div class="service-item">
                                 <div class="fa-stack fa-5x">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-calendar fa-stack-1x text-primary"></i>
+                                    <i class="fa fa-calendar fa-stack-1x text-primary" style="color: #71aebc;"></i>
                                 </div>
                                 <div>
                                     <h4>
                                         <strong>What Departure Date?</strong>
                                     </h4>
-                                    <a href="#time" class="btn btn-light">June 4th</a>
-                                    <a href="#time" class="btn btn-light">June 5th</a>
-                                    <a href="#time" class="btn btn-light">June 6th</a>
-                                    <a href="#time" class="btn btn-light">June 7th</a>
-                                    <a href="#time" class="btn btn-light">June 8th</a>
-                                    <a href="#time" class="btn btn-light">June 9th</a>
-                                    <a href="#time" class="btn btn-light">June 10th</a>
-                                    <a href="#time" class="btn btn-light">June 11th</a>
-                                    <a href="#time" class="btn btn-light">June 12th</a>
-                                    <a href="#time" class="btn btn-light">June 13th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 4th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 5th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 6th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 7th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 8th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 9th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 10th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 11th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 12th</a>
+                                    <a href="#time" class="btn btn-light smoothScroll">June 13th</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
-    <hr class="small2">
+        <hr class="small2">
     </section>
     
     
@@ -190,171 +153,82 @@
                     <div class="row">
                         <div class="col-md-12 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-5x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-clock-o fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>What Time Departure from NU?</strong>
-                                </h4>
-                                <button>1</button>
-                                <button>2</button>
-                                <button>3</button>
-                                <button>4</button>
-                                <button>5</button>
-                                <div id="content">
-                                
+                                <div class="fa-stack fa-5x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-clock-o fa-stack-1x text-primary" style="color: #71aebc;"></i>
                                 </div>
-                                <div id="content1">
-                                    <img src="img/portfolio-1.jpg">
+                                <div>
+                                    <h4>
+                                        <strong>What Time Departure from NU?</strong>
+                                    </h4>
+                                    <a href="#connect" class="btn btn-light smoothScroll">1:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">2:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">3:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">4:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">5:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">6:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">7:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">8:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">9:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">10:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">11:00 AM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">12:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">1:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">2:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">3:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">4:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">5:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">6:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">7:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">8:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">9:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">10:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">11:00 PM</a>
+                                    <a href="#connect" class="btn btn-light smoothScroll">12:00 PM</a>
                                 </div>
-                                <div id="content2">
-                                    <img src="img/portfolio-2.jpg">
-                                </div>
-                                <div id="content3">
-                                    <img src="img/portfolio-3.jpg">
-                                </div>
-                                <div id="content4">
-                                    <img src="img/portfolio-4.jpg">
-                                </div>
-                                <div id="content5">
-                                    <div id="scrollbar" style="overflow-y: scroll;">
-            <div class="option">
-                <h2>1:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>2:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>3:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>4:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>5:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>6:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">                              
-            <div class="option">
-                <h2>7:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>8:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>9:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>10:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>11:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>12:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>1:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>2:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>3:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>4:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>5:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>6:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>7:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>8:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>9:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>10:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>11:00 PM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-            <hr class="small3">
-            <div class="option">
-                <h2>12:00 AM</h2>
-                <a class="btn btn-light" href="#">Join</a>
-            </div>
-                                    
         </div>
+        <hr class="small2">
+    </section>
+    
+    <section id="connect" class="services bg-primary">
+        <div class="container pad-top">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6">
+                            <div class="service-item">
+                                <div class="fa-stack fa-5x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-users fa-stack-1x text-primary" style="color: #71aebc;"></i>
+                                </div>
+                                
+                                <div>
+                                    <h4><strong>Connect!</strong></h4>
+                                    <form>
+                                        <label>Full Name:</label>
+                                        <input type="text" name="firstname"><br>
+                                        <label>NU Email:</label>
+                                        <input type="text" name="email">
+                                        <br>
+                                        <a href="#connect" class="btn btn-light" type="submit" value="Submit">Submit</a>
+                                    </form>
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
-
+    
+    
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -362,21 +236,23 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/buggyhq" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://www.facebook.com/buggyhq" target="_blank"><i class="fa fa-facebook fa-fw fa-3x" style="color: #71aebc;"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/lets.buggy/?hl=en" target="_blank"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                            <a href="https://www.instagram.com/lets.buggy/?hl=en" target="_blank"><i class="fa fa-instagram fa-fw fa-3x" style="color: #71aebc;"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/buggyhq?lang=en" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/buggyhq?lang=en" target="_blank"><i class="fa fa-twitter fa-fw fa-3x" style="color: #71aebc;"></i></a>
                         </li>
                     </ul>
+                    
                     <hr class="small">
                     
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:buggyhq@gmail.com" style="font-size:15px">buggyhq@gmail.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:buggyhq@gmail.com" style="font-size:15px; color: #71aebc;">buggyhq@gmail.com</a>
                         </li>
                     </ul>
+                    
                     <p class="text-muted" style="font-size:12px">Copyright &copy; letsbuggy.com</p>
                     <p class="text-muted" style="font-size:11px">Designed and Developed by Nadia, Armaan, and Joanna</p>
 
@@ -384,14 +260,40 @@
             </div>
         </div>
     </footer>
-
+    
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="analytics.js"></script>
+    
+    
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCivdL52GAP_BynTnwDb6_hHhSKleLsMZo",
+        authDomain: "project-6451685085117135161.firebaseapp.com",
+        databaseURL: "https://project-6451685085117135161.firebaseio.com",
+        storageBucket: "project-6451685085117135161.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+    
+    
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/bootstrap.js"></script>
 
+    
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="smoothscroll.js"></script>
     <!-- Custom Theme JavaScript -->
+<!--
     <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
@@ -429,6 +331,9 @@
     $('div#content').html($('div#content' + ($(this).index()-1)).html());
 });
     </script>
+-->
+    
+    
 
 </body>
 
