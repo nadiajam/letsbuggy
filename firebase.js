@@ -6,11 +6,26 @@
 
 var ref = new Firebase("https://project-6451685085117135161.firebaseio.com/");
 var usersRef = ref.child("users");
-var groupRef = ref.child("groups")
+var groupRef = ref.child("groups");
+ref.initializeGroups();
 
 function initializeGroups() {
+  date_array = [7,8,9,10,11,12,13]
+  group_ids = []
+  for (airports=0; airports< 2; airports++)  
+    for(dates = 0; dates < 7; dates++)
+      for(times =1; times < 25; times++ )
+        if(airports === 0)
+          airport = "Ohare"
+        else
+          airport = "Midway"
+        input = {airport: "Ohare", date: dates_array[dates], time: times}
+        //members child is to be inputted when updategroup is called for the first time
+
+        group_ids.push(groupRef.push(input).key()) //keep track of all the groups to access later
+
 	/*
-		set the group_id's for each location,date,time combination -- most likely using nested for loops for each date-times for ohare and midway
+		set the group_id's for each location,date,time combination
 		define :
 			group_id {
 				'airport': 'Ohare',
@@ -21,18 +36,13 @@ function initializeGroups() {
 	*/
 }
 
+
 // all parameters are given when function is called, most importantly the userGroup_Id is provided based on a match
 // with the group_id that represents the button pressed
-function writeNewUser(username, userEmail, userPhone, userGroup_Id) {
-	var user_id = firebase.database().ref().child('users').push().key;
-
-	usersRef.child(user_id).set({
-		name: username,
-		email: userEmail,
-		phone: userPhone,
-		userGroup_Id: true
-	});
-	ref.updateGroup(user_id,userGroup_Id)
+function writeNewUser(username, userEmail, userPhone, group_id) {
+	input = {name: username, email: userEmail, phone: userPhone, group_id: true}
+  var user_id = usersRef.push(input).key;
+	ref.updateGroup(user_id,group_id)
 }
 
 function updateGroup(userId, userGroup_Id) {
@@ -43,77 +53,14 @@ function updateGroup(userId, userGroup_Id) {
 }
 
 function getGroupMembers(group_id) {
-	var members = []
+	var members_list = []
 	groupRef.child(group_id).child('members').forEach(function(childSnapshot) {
-		members.append(childrenSnapshot.key())
+		members_list.push(childrenSnapshot.key())
 	});
 }
 
 
 
-
-'use strict';
-
-// Shortcuts to DOM Elements.
-var messageForm = document.getElementById('message-form');
-var messageInput = document.getElementById('new-post-message');
-var titleInput = document.getElementById('new-post-title');
-var signInButton = document.getElementById('sign-in-button');
-var splashPage = document.getElementById('page-splash');
-var addPost = document.getElementById('add-post');
-var addButton = document.getElementById('add');
-var recentPostsSection = document.getElementById('recent-posts-list');
-var userPostsSection = document.getElementById('user-posts-list');
-var topUserPostsSection = document.getElementById('top-user-posts-list');
-var recentMenuButton = document.getElementById('menu-recent');
-var myPostsMenuButton = document.getElementById('menu-my-posts');
-var myTopPostsMenuButton = document.getElementById('menu-my-top-posts');
-
-
-
-
-function writeUserData(userId, name, email, phone, group_id) {
-  firebase.database().ref('users/' + userId).push({
-    'username': name,
-    'email': email,
-    'phone': phone,
-    'group': {
-    	group_id: true
-    }
-  });
-  ref.updateGroups(group_id, userId);
-}
-
-function updateGroups()
-  firebase.database().ref('groups/' + group_id + '/members').a({
-    userId:
-  });
-
-/**
- * Saves a new post to the Firebase DB.
- */
-// [START write_fan_out]
-function writeNewUser(uid, username, title, body) {
-  // A post entry.
-  var postData = {
-    author: username,
-    uid: uid,
-    body: body,
-    title: title,
-    starCount: 0
-  };
-
-  // Get a key for a new Post.
-  var newPostKey = firebase.database().ref().child('posts').push().key;
-
-  // Write the new post's data simultaneously in the posts list and the user's post list.
-  var updates = {};
-  updates['/posts/' + newPostKey] = postData;
-  updates['/user-posts/' + uid + '/' + newPostKey] = postData;
-
-  return firebase.database().ref().update(updates);
-}
-// [END write_fan_out]
 
 function isUserInGroup(userId) {
     ref.once('value', function(snap) {
